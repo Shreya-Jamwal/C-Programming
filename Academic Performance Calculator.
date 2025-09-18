@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int sub1, sub2, sub3, sub4, sub5;
+    int total;
+    float average, percentage;
+
+    // Read the marks for the 5 subjects
+    scanf("%d %d %d %d %d", &sub1, &sub2, &sub3, &sub4, &sub5);
+
+    // Calculate the total marks
+    total = sub1 + sub2 + sub3 + sub4 + sub5;
+
+    // Calculate the average marks
+    // Use 5.0f to ensure floating-point division
+    average = total / 5.0f;
+
+    // Calculate the percentage
+    // Total marks are out of 500 (5 subjects * 100 marks each)
+    percentage = (total / 500.0f) * 100.0f;
+
+    // Output the total, average, and percentage
+    printf("%.0f %.2f %.2f\n", (float)total, average, percentage);
+
+    return 0;
+}
