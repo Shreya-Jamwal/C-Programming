@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x1, y1, x2, y2;
+    
+    // Read coordinates of two points
+    scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
+    
+    // Calculate differences
+    int dx = x2 - x1;
+    int dy = y2 - y1;
+    
+    // Calculate Euclidean distance
+    double distance = sqrt((double)(dx * dx + dy * dy));
+    
+    // Print distance up to 2 decimal places
+    printf("%.2f\n", distance);
+    return 0;
+}
